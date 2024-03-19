@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 400px;
+  width: 800px;
+  display: grid;
+  grid-template-areas:
+    "b d f"
+    "c d e";
+  margin: auto;
+  background-color: palevioletred;
+  gap: 10px;
+  margin-top: 5%;
+}
+
+header {
+  background-color: blue;
+  height: 15vh;
+  width: 100%;
+}
+
+.one {
+  background-color: black;
+  grid-area: b;
+}
+
+.two {
+  background-color: black;
+  grid-area: c;
+}
+
+.tree {
+  background-color: brown;
+  grid-area: d;
+}
+
+.four {
+  background-color: black;
+  grid-area: e;
+}
+
+.five {
+  background-color: black;
+  grid-area: f;
+}
+
+footer {
+  margin-top: 5%;
+  background-color: lightgreen;
+  height: 15vh;
+}
+
+.h1 {
+  background-color: cyan;
+  width: 34.40%;
+  height: 15vh;
+}
