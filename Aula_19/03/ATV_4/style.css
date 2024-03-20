@@ -1,14 +1,14 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 .container {
   margin: auto;
   display: grid;
-  width: 800px;
-  height: 400px;
+  width: 960px;
+  height: 600px;
   gap: 10px;
   grid-template-areas:
     "e e"
@@ -16,6 +16,8 @@
     "a c"
     "a d";
 }
+
+
 
 main {
   background-color: green;
@@ -40,4 +42,18 @@ main {
 header {
   background-color: yellow;
   grid-area: e;
+}
+
+@media screen and (max-width:600px) {
+  .container {
+    grid-template-areas: 
+      "e"
+      "a"
+      "a"
+      "b"
+      "c"
+      "d";
+    width: 90%;
+  }
+
 }
