@@ -10,9 +10,10 @@
   display: grid;
   grid-template-areas:
     "a c b"
-    "d c e";
+    "d c e"
+  ;
   margin: auto;
-  background-color: palevioletred;
+  background-color: salmon;
   gap: 10px;
   margin-top: 1%;
 }
@@ -24,10 +25,10 @@
 }
 
 .h2 {
-  background-color:cadetblue;
-  width: 29%;
+  background-color: cadetblue;
+  width: 30%;
   height: 15vh;
-  margin-top: -7.38%;
+  margin-top: -11%;
 }
 
 .one {
@@ -57,20 +58,18 @@
 
 footer {
   margin-top: 1%;
-  background-color: lightgreen;
+  background-color: cyan;
   height: 15vh;
+  grid-area: f;
+
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:650px) {
   .h1 {
     width: 100%;
   }
 
   .h2 {
-    width: 100%;
-  }
-
-  footer {
     width: 100%;
   }
 
@@ -80,6 +79,8 @@ footer {
       "d e"
       "c c"
     ;
-    width: 90%;
+
+    width: 100%;
+    height: 100vh;
   }
 }
