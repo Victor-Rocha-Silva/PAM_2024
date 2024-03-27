@@ -12,9 +12,8 @@
     "a a a"
     "b c d"
     "e e d";
-  grid-template-rows: 1fr 2fr 2fr;
   margin: auto;
-  gap: 10px;
+  gap: 5px;
 
 }
 
@@ -42,4 +41,17 @@ aside {
 main {
   background-color: blue;
   grid-area: e;
+}
+
+@media screen and (max-width:600px) {
+  .container {
+    grid-template-areas: 
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+;
+    width: 90%;
+  }
 }

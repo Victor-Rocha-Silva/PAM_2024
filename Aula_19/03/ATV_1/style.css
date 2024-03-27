@@ -43,3 +43,16 @@ footer {
   background-color: green;
   grid-area: e;
 }
+
+@media screen and (max-width:600px) {
+  .container {
+    grid-template-areas: 
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+;
+    width: 90%;
+  }
+}

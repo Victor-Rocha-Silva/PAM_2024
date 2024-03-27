@@ -9,53 +9,77 @@
   width: 800px;
   display: grid;
   grid-template-areas:
-    "b d f"
-    "c d e";
+    "a c b"
+    "d c e";
   margin: auto;
   background-color: palevioletred;
   gap: 10px;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
-header {
+.h1 {
   background-color: blue;
   height: 15vh;
   width: 100%;
 }
 
+.h2 {
+  background-color:cadetblue;
+  width: 29%;
+  height: 15vh;
+  margin-top: -7.38%;
+}
+
 .one {
   background-color: black;
-  grid-area: b;
+  grid-area: a;
 }
 
 .two {
   background-color: black;
-  grid-area: c;
+  grid-area: b;
 }
 
 .tree {
   background-color: brown;
-  grid-area: d;
+  grid-area: c;
 }
 
 .four {
   background-color: black;
-  grid-area: e;
+  grid-area: d;
 }
 
 .five {
   background-color: black;
-  grid-area: f;
+  grid-area: e;
 }
 
 footer {
-  margin-top: 5%;
+  margin-top: 1%;
   background-color: lightgreen;
   height: 15vh;
 }
 
-.h1 {
-  background-color: cyan;
-  width: 34.40%;
-  height: 15vh;
+@media screen and (max-width:600px) {
+  .h1 {
+    width: 100%;
+  }
+
+  .h2 {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .container {
+    grid-template-areas:
+      "a b"
+      "d e"
+      "c c"
+    ;
+    width: 90%;
+  }
 }
