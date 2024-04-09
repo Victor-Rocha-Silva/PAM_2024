@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 80vh;
+    width: 80%;
+    gap: 7px;
+    display: grid;
+    grid-template-areas:
+        "a a a a"
+        "d c c c"
+        "d b b b"
+    ;
+    margin: auto;
+
+}
+
+header {
+    background-color: red;
+    grid-area: a;
+}
+
+.blue {
+    background-color: blue;
+    grid-area: b;
+}
+
+.black {
+    background-color: black;
+    grid-area: c;
+}
+
+aside {
+    background-color: greenyellow;
+    grid-area: d;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        grid-template-areas:
+            "a"
+            "d"
+            "c"
+            "b"
+        ;
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 2fr 4fr 4fr 6fr;
+    }
+}
